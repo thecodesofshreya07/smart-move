@@ -10,7 +10,7 @@ import DiningPage from "./pages/Dining"; // ✅ Added
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/smart-move">
       <Routes>
         <Route path="/" element={<EntryPage />} />
         <Route path="/landing" element={<LandingPage />} />
@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/campus-map" element={<CampusMapPage />} />
         <Route path="/navigation" element={<NavigationPage />} />
         <Route path="/campus-services" element={<CampusServicesPage />} />
-        <Route path="/dining" element={<DiningPage />} /> {/* ✅ Added */}
+        <Route path="/dining" element={<DiningPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
