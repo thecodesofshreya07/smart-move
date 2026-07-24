@@ -10,5 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/smart-move/',
+  base: process.env.VERCEL ? '/' : '/smart-move/',
 })

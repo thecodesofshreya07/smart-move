@@ -10,7 +10,7 @@ import DiningPage from "./pages/Dining"; // ✅ Added
 
 export default function App() {
   return (
-    <BrowserRouter basename="/smart-move">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<EntryPage />} />
         <Route path="/landing" element={<LandingPage />} />
